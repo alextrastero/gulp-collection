@@ -43,7 +43,7 @@ gulp.task('default', function() {
 
   return gulp.src('*.hbs')
     .pipe(matter())
-    .pipe(collection(':tags/:tag.hbs', {list: list, item: item}))
+    .pipe(collection(':tags/:tag.hbs', {list: listFile, item: itemFile}))
     .pipe(gulp.dest('dist/'));
 });
 ```
